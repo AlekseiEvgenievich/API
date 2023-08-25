@@ -14,17 +14,18 @@
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ## Настройка
 
 1. Создайте `.env` файл в корне вашего проекта.
 2. Установите следующие переменные:
 
-'API_TOKEN'=3bK6nQQh2spBwLGJSAxakzWEwyM3bh7J5bEjDYa6
-NAME_FOLDER=images
-NUMBER_DAYS=15
-START_DATE=2023-07-24
-BOT_TOKEN=6305951751:AAHLwfSUWydVYjddTI0Tkb0FbjTvvX3OaqU
-TIME=20
-CHANNEL_NAME=@AstroImagesPictures
+`API_TOKEN`=Ваш_API_токен
+`NAME_FOLDER`=имя_папки_с_изображениями
+`NUMBER_DAYS`=количество_дней
+`START_DATE`=начальная_дата
+`BOT_TOKEN`=Токен_вашего_бота
+`TIME`=время_отправки
+`CHANNEL_NAME`=имя_вашего_канала
+
