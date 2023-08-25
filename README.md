@@ -35,6 +35,8 @@ This script fetches images from the NASA Astronomy Picture of the Day (APOD) API
 This script fetches images from the latest SpaceX launch and saves them to your local machine.
 ### get_epic.py script
 This script is designed to fetch images from NASA's EPIC (Earth Polychromatic Imaging Camera) API for the given number of days and saves them to your local machine.
+### telegram_boot.py script
+This script is designed to send images from a local directory to a Telegram channel at regular intervals. It ensures the images are within Telegram's file size limit before sending.
 
 
 
