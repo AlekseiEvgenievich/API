@@ -29,3 +29,13 @@ pip install -r requirements.txt
 - `TIME`=время_отправки
 - `CHANNEL_NAME`=имя_вашего_канала
 
+### get_nasa_picture.py script
+This script fetches images from the NASA Astronomy Picture of the Day (APOD) API and saves them to your local machine.
+### fetch_spacex_images.py script
+This script fetches images from the latest SpaceX launch and saves them to your local machine.
+### get_epic.py script
+This script is designed to fetch images from NASA's EPIC (Earth Polychromatic Imaging Camera) API for the given number of days and saves them to your local machine.
+
+
+
+
