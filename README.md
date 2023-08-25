@@ -41,3 +41,4 @@ This script is designed to send images from a local directory to a Telegram chan
 
 
 
+
