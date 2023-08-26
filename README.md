@@ -37,6 +37,14 @@ This script fetches images from the latest SpaceX launch and saves them to your 
 This script is designed to fetch images from NASA's EPIC (Earth Polychromatic Imaging Camera) API for the given number of days and saves them to your local machine.
 ### telegram_boot.py script
 This script is designed to send images from a local directory to a Telegram channel at regular intervals. It ensures the images are within Telegram's file size limit before sending.
+### get_imageinformation.py script
+This script is developed to fetch the latest space-related images from multiple sources like SpaceX and NASA. It integrates with SpaceX's public API to fetch the latest launch images and NASA's APOD (Astronomy Picture of the Day) and EPIC (Earth Polychromatic Imaging Camera) services to gather astonishing space photos.
+```bash
+    python  get_imageinformation.py --id SPACEX_LAUNCH_ID
+    ```
+
+    Replace `script_name.py` with the name of your script and `SPACEX_LAUNCH_ID` with the desired SpaceX launch ID if you want to specify a different launch.
+
 
 
 
