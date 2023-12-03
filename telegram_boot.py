@@ -28,8 +28,8 @@ def send_on_telegram(bot_token, folder_name, channel_name,sleeping_time):
     
 if __name__ == '__main__':
     load_dotenv()
-    bot_token = os.environ["BOT_TOKEN"]
+    bot_token = os.environ["TELEGRAM_BOT_TOKEN"]
     sleeping_time = os.environ["TIME"]
-    folder_name = os.environ["NAME_FOLDER"]
-    channel_name = os.environ["CHANNEL_NAME"]
+    folder_name = os.environ["IMAGE_NAME_FOLDER"]
+    channel_name = os.environ["TELEGRAM_CHANNEL_NAME"]
     send_on_telegram(bot_token, folder_name, channel_name,sleeping_time)
