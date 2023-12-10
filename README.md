@@ -21,30 +21,41 @@ pip install -r requirements.txt
 1. Создайте `.env` файл в корне вашего проекта.
 2. Установите следующие переменные:
 
-- `API_TOKEN`=Ваш_API_токен
-- `NAME_FOLDER`=имя_папки_с_изображениями
+- `NASA_API_TOKEN`=Ваш_API_токен
+- `IMAGE_NAME_FOLDER`=имя_папки_с_изображениями
 - `NUMBER_DAYS`=количество_дней
 - `START_DATE`=начальная_дата
-- `BOT_TOKEN`=Токен_вашего_бота
+- `TELEGRAM_BOT_TOKEN`=Токен_вашего_бота
 - `TIME`=время_отправки
-- `CHANNEL_NAME`=имя_вашего_канала
+- `TELEGRAM_CHANNEL_NAME`=имя_вашего_канала
 
 ### get_nasa_picture.py script
-This script fetches images from the NASA Astronomy Picture of the Day (APOD) API and saves them to your local machine.
+Этот скрипт получает изображения от NASA Astronomy Picture of the Day (APOD) API и сохраняет их на вашем локальном компьютере.
+```bash
+    python  get_nasa_picture.py
+```
 ### fetch_spacex_images.py script
-This script fetches images from the latest SpaceX launch and saves them to your local machine.
+Этот скрипт получает изображения с последнего запуска SpaceX и сохраняет их на вашем локальном компьютере.
+```bash
+    python  fetch_spacex_images.py
+```
 ### get_epic.py script
-This script is designed to fetch images from NASA's EPIC (Earth Polychromatic Imaging Camera) API for the given number of days and saves them to your local machine.
+Этот скрипт предназначен для получения изображений от NASA's EPIC (Earth Polychromatic Imaging Camera) API за заданное количество дней и сохраняет их на вашем локальном компьютере.
+```bash
+    python  get_epic.py 
+```
 ### telegram_boot.py script
-This script is designed to send images from a local directory to a Telegram channel at regular intervals. It ensures the images are within Telegram's file size limit before sending.
+Этот скрипт предназначен для отправки изображений из локальной директории в Telegram-канал через регулярные интервалы. Он проверяет, что изображения соответствуют лимиту размера файлов Telegram перед отправкой.
+```bash
+    python  telegram_boot.py 
+```
 ### get_imageinformation.py script
-This script is developed to fetch the latest space-related images from multiple sources like SpaceX and NASA. It integrates with SpaceX's public API to fetch the latest launch images and NASA's APOD (Astronomy Picture of the Day) and EPIC (Earth Polychromatic Imaging Camera) services to gather astonishing space photos.
+Этот скрипт разработан для получения последних космических изображений от разных источников, таких как SpaceX и NASA. Он интегрируется с публичным API SpaceX для получения изображений с последнего запуска и сервисов NASA APOD (Astronomy Picture of the Day) и EPIC (Earth Polychromatic Imaging Camera) для сбора потрясающих космических фотографий.
 ```bash
     python  get_imageinformation.py --id SPACEX_LAUNCH_ID
-    ```
+```
 
-    Replace `script_name.py` with the name of your script and `SPACEX_LAUNCH_ID` with the desired SpaceX launch ID if you want to specify a different launch.
-
+Замените script_name.py на имя вашего скрипта и SPACEX_LAUNCH_ID на желаемый ID запуска SpaceX, если вы хотите указать другой запуск.
 
 
 
