@@ -33,8 +33,6 @@ if __name__ == '__main__':
     spacex_url = "https://api.spacexdata.com/v5/launches/{}".format(args.id)
     fetch_spacex_last_launch(spacex_url, path)
     
-    nasa_url = "https://api.nasa.gov/planetary/apod"
-    get_nasa_pictures(nasa_url,path,start_date,token)
-    
-    earth_url = "https://api.nasa.gov/EPIC/api/natural/date/"
-    get_epic(earth_url,path,number_of_days,token)
+    get_nasa_pictures(path,start_date,token)
+
+    get_epic(path,number_of_days,token)

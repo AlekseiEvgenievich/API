@@ -12,4 +12,3 @@ def fetch_spacex_last_launch(url, directory_name):
         file_name = 'space_{}.jpeg'.format(i)
         output_name = directory_name / file_name
         download_image(url,output_name)
-        

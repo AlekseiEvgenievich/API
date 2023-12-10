@@ -9,14 +9,8 @@ from process_image import get_extension
 import os
 
 
-def get_extension(url):
-    scheme, netloc, path, query, fragment = urlsplit(url)
-    head,tail = os.path.split(unquote(path))
-    root,ext = os.path.splitext(tail)
-    return ext
-
-
-def get_nasa_pictures(url, directory_name,start_date, token):
+def get_nasa_pictures(directory_name,start_date, token):
+    url = "https://api.nasa.gov/planetary/apod"
     payload = {
         "api_key":token,
         "start_date": start_date,
