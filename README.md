@@ -43,17 +43,13 @@ pip install -r requirements.txt
 Замените script_name.py на имя вашего скрипта и SPACEX_LAUNCH_ID на желаемый ID запуска SpaceX, если вы хотите указать другой запуск.  
 
 ### get_nasa_picture.py script
-Написана функция ### get_nasa_pictures,которая получает изображения от NASA Astronomy Picture of the Day (APOD) API и сохраняет их на вашем локальном компьютере.
+Написана функция **get_nasa_pictures**,которая получает изображения от NASA Astronomy Picture of the Day (APOD) API и сохраняет их на вашем локальном компьютере.
 ### fetch_spacex_images.py script
-Этот скрипт получает изображения с последнего запуска SpaceX и сохраняет их на вашем локальном компьютере.
-```bash
-    python  fetch_spacex_images.py
-```
+Написана функция **fetch_spacex_image**, которая получает изображения с последнего запуска SpaceX и сохраняет их на вашем локальном компьютере.
+
 ### get_epic.py script
-Этот скрипт предназначен для получения изображений от NASA's EPIC (Earth Polychromatic Imaging Camera) API за заданное количество дней и сохраняет их на вашем локальном компьютере.
-```bash
-    python  get_epic.py 
-```
+Написана функция **get_epic** предназначен для получения изображений от NASA's EPIC (Earth Polychromatic Imaging Camera) API за заданное количество дней и сохраняет их на вашем локальном компьютере.
+
 
 
 
