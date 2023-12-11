@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ### get_image.py script
 Этот скрипт разработан для получения последних космических изображений от разных источников, таких как SpaceX и NASA. Он интегрируется с публичным API SpaceX для получения изображений с последнего запуска и сервисов NASA APOD (Astronomy Picture of the Day) и EPIC (Earth Polychromatic Imaging Camera) для сбора потрясающих космических фотографий.
 ```bash
-    python  get_imagen.py --id SPACEX_LAUNCH_ID
+    python  get_image.py --id SPACEX_LAUNCH_ID
 ```
 
 Замените script_name.py на имя вашего скрипта и SPACEX_LAUNCH_ID на желаемый ID запуска SpaceX, если вы хотите указать другой запуск.  
