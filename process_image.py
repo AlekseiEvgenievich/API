@@ -6,11 +6,11 @@ from urllib.parse import urlsplit
 import os
 
 
-def download_image(url, name_path):
+def download_image(url, name_path, params=None):
     headers = {
         'User-Agent': 'curl'
     }
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, params=params)
     response.raise_for_status()
     with open(name_path, 'wb') as file:
         file.write(response.content)

@@ -4,8 +4,9 @@ import os
 from process_image import download_image
 from process_image import get_extension
 
-def fetch_spacex_last_launch(url, directory_name):
-    response = requests.get(url)
+def fetch_spacex_last_launch(id, directory_name):
+    spacex_url = "https://api.spacexdata.com/v5/launches/{}".format(id)
+    response = requests.get(spacex_url)
     response.raise_for_status()
     image_urls = response.json()['links']['flickr']['original']
     for i, url in enumerate(image_urls):

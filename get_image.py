@@ -30,8 +30,7 @@ if __name__ == '__main__':
     parser = create_parser()
     args = parser.parse_args()
     
-    spacex_url = "https://api.spacexdata.com/v5/launches/{}".format(args.id)
-    fetch_spacex_last_launch(spacex_url, path)
+    fetch_spacex_last_launch(args.id, path)
     
     get_nasa_pictures(path,start_date,token)
 
